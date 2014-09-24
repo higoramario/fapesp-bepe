@@ -1,0 +1,143 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.50 }
+
+\bibitem{hailpern2002}
+\abntrefinfo{Hailpern \& Santhanam}{HAILPERN; SANTHANAM}{2002}
+{HAILPERN, B.; SANTHANAM, P. Software debugging, testing, and verification.
+\textbf{IBM Systems Journal}, v.~41, n.~1, p. 4--12, April 2002.}
+
+\bibitem{tassey2002}
+\abntrefinfo{Tassey}{TASSEY}{2002}
+{TASSEY, G. The economic impacts of inadequate infrastructure for software
+  testing.
+\textbf{National Institute of Standards and Technology, RTI Project}, v.~7007,
+  n.~011, 2002.}
+
+\bibitem{jones2007}
+\abntrefinfo{Jones et al.}{JONES et al.}{2007}
+{JONES, J.~A.; BOWRING, J.~F.; HARROLD, M.~J. Debugging in parallel. In:
+  \textbf{Proceedings of the 2007 International Symposium on Software Testing
+  and Analysis}. New York, NY, USA: [s.n.], 2007.  (ISSTA '07), p. 16--26.}
+
+\bibitem{Myers2004}
+\abntrefinfo{Myers et al.}{MYERS et al.}{2004}
+{MYERS, G.~J.; SANDLER, C.; BADGETT, T.; THOMAS, T.~M. \textbf{The Art of
+  Software Testing}. 2. ed. [S.l.]: John Wiley \& Sons, 2004.}
+
+\bibitem{mariani2011}
+\abntrefinfo{Mariani et al.}{MARIANI et al.}{2011}
+{MARIANI, L.; PASTORE, F.; PEZZE, M. Dynamic analysis for diagnosing
+  integration faults.
+\textbf{IEEE Transactions on Software Engineering}, v.~37, n.~4, p. 486--508,
+  jul-aug 2011.}
+
+\bibitem{naish2010}
+\abntrefinfo{Naish et al.}{NAISH et al.}{2010}
+{NAISH, L.; LEE, H.~J.; RAMAMOHANARAO, K. Statements versus predicates in
+  spectral bug localization. In:  \textbf{Proceedings of the 17th Asia Pacific
+  Software Engineering Conference}. Sydney, Australia: [s.n.], 2010.  (APSEC
+  '10), p. 375--384.}
+
+\bibitem{santelices2009}
+\abntrefinfo{Santelices et al.}{SANTELICES et al.}{2009}
+{SANTELICES, R.; JONES, J.~A.; YU, Y.; HARROLD, M.~J. Lightweight
+  fault-localization using multiple coverage types. In:  \textbf{Proceedings of
+  the ACM/IEEE 31st International Conference on Software Engineering}.
+  Washington, DC, USA: IEEE, 2009.  (ICSE '09), p. 56--66.}
+
+\bibitem{masri2010}
+\abntrefinfo{Masri}{MASRI}{2010}
+{MASRI, W. Fault localization based on information flow coverage.
+\textbf{Software Testing, Verification and Reliability}, Chichester, UK, v.~20,
+  p. 121--147, June 2010.}
+
+\bibitem{burger2008}
+\abntrefinfo{Burger \& Zeller}{BURGER; ZELLER}{2008}
+{BURGER, M.; ZELLER, A. Replaying and isolating failing multi-object
+  interactions. In:  \textbf{Proceedings of the 2008 International Workshop on
+  Dynamic Analysis: Held in conjunction with the ACM SIGSOFT International
+  Symposium on Software Testing and Analysis (ISSTA '08)}. New York, NY, USA:
+  [s.n.], 2008.  (WODA '08), p. 71--77.}
+
+\bibitem{wong2010}
+\abntrefinfo{Wong et al.}{WONG et al.}{2010}
+{WONG, W.~E.; DEBROY, V.; CHOI, B. A family of code coverage-based heuristics
+  for effective fault localization.
+\textbf{Journal of Systems and Software}, v.~83, n.~2, p. 188--208, February
+  2010.}
+
+\bibitem{jones2002}
+\abntrefinfo{Jones et al.}{JONES et al.}{2002}
+{JONES, J.~A.; HARROLD, M.~J.; STASKO, J. Visualization of test information to
+  assist fault localization. In:  \textbf{Proceedings of the 24th ACM/IEEE
+  International Conference on Software Engineering}. Orlando, FL, USA: [s.n.],
+  2002.  (ICSE '02), p. 467--477.}
+
+\bibitem{souza2012b}
+\abntrefinfo{Souza}{SOUZA}{2012}
+{SOUZA, H.~A. de.
+\textbf{Program Debugging based on Integration Coverage}.
+Disserta\c{c}\~ao (Mestrado) --- School of Arts, Sciences, and Humanities,
+  University of S\~ao Paulo, 2012. In Portuguese.}
+
+\bibitem{souza2013}
+\abntrefinfo{Souza \& Chaim}{SOUZA; CHAIM}{2013}
+{SOUZA, H.~A. de; CHAIM, M.~L. Adding context to fault localization with
+  integration coverage. In:  \textbf{Proceedings of the 28th International
+  Conference on Automated Software Engineering}. [S.l.]: ACM Press, 2013.  (ASE
+  '13), p. 628--633.}
+
+\bibitem{abreu2007}
+\abntrefinfo{Abreu et al.}{ABREU et al.}{2007}
+{ABREU, R.; ZOETEWEIJ, P.; GEMUND, A. J.~C. van. On the accuracy of
+  spectrum-based fault localization. In:  \textbf{Testing: Academic and
+  Industrial Conference Practice and Research Techniques - MUTATION}. [S.l.:
+  s.n.], 2007.  (TAICPART-MUTATION 2007), p. 89--98.}
+
+\bibitem{parnin2011}
+\abntrefinfo{Parnin \& Orso}{PARNIN; ORSO}{2011}
+{PARNIN, C.; ORSO, A. Are automated debugging techniques actually helping
+  programmers? In:  \textbf{Proceedings of the 2011 International Symposium on
+  Software Testing and Analysis}. New York, NY, USA: ACM, 2011.  (ISSTA '11),
+  p. 199--209.}
+
+\bibitem{hsu2008}
+\abntrefinfo{Hsu et al.}{HSU et al.}{2008}
+{HSU, H.-Y.; JONES, J.~A.; ORSO, A. Rapid: Identifying bug signatures to
+  support debugging activities. In:  \textbf{Proceedings of the 23th
+  International Conference on Automated Software Engineering}. [S.l.: s.n.],
+  2008.  (ASE '08), p. 439--442.}
+
+\bibitem{cheng2009}
+\abntrefinfo{Cheng et al.}{CHENG et al.}{2009}
+{CHENG, H.; LO, D.; ZHOU, Y.; WANG, X.; YAN, X. Identifying bug signatures
+  using discriminative graph mining. In:  \textbf{Proceedings of the 2009
+  International Symposium on Software Testing and Analysis}. [S.l.: s.n.],
+  2009.  (ISSTA '09), p. 141--152.}
+
+\bibitem{debroy2009}
+\abntrefinfo{Debroy \& Wong}{DEBROY; WONG}{2009}
+{DEBROY, V.; WONG, W.~E. Insights on fault interference for programs with
+  multiple bugs. In:  \textbf{Proceedings of the 20th IEEE International
+  Conference on Software Reliability Engineering}. Piscataway, NJ, USA: IEEE
+  Press, 2009.  (ISSRE '09), p. 165--174. Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/dl\-.acm\-.org\-/citation\-.cfm?id=1802408\-.1802433$>$}{http://dl.acm.org/citation.cfm?id=1802408.1802433}.}
+
+\bibitem{digiuseppe2011}
+\abntrefinfo{DiGiuseppe \& Jones}{DIGIUSEPPE; JONES}{2011}
+{DIGIUSEPPE, N.; JONES, J. Fault interaction and its repercussions. In:
+  \textbf{Proceedings of the 27th IEEE International Conference on Software
+  Maintenance}. Williamsburg, VI: [s.n.], 2011.  (ICSM '11), p. 3--12.}
+
+\bibitem{wainer2006}
+\abntrefinfo{Wainer}{WAINER}{2011}
+{WAINER, J. Experiment in collaborative systems. In:  PIMENTEL, M.; FUKS, H.
+  (Ed.). \textbf{Collaborative systems}. Rio de Janeiro, RJ:
+  Elsevier-Campus-SBC, 2011. p. 405--432.
+In Portuguese.}
+
+\end{thebibliography}
