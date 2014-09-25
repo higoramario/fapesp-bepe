@@ -7318,14 +7318,15 @@ address = {Williamsburg, VI}
 }
 
 @INCOLLECTION{wainer2006,
-  title={Experimento em sistemas colaborativos},
-  booktitle={Sistemas Colaborativos},
+  title={Experiment in Collaborative Systems},
+  booktitle={Collaborative systems},
   author={Jacques Wainer},
   editor={Mariano Pimentel and Hugo Fuks},
   publisher={Elsevier-Campus-SBC},
   pages={405-432},
   address={Rio de Janeiro, RJ},
-  year={2011}
+  year={2011},
+  note={In Portuguese}
 }
 
 @INPROCEEDINGS{naish2010,

@@ -140,4 +140,11 @@ Disserta\c{c}\~ao (Mestrado) --- School of Arts, Sciences, and Humanities,
   Elsevier-Campus-SBC, 2011. p. 405--432.
 In Portuguese.}
 
+\bibitem{besson2014}
+\abntrefinfo{Besson et al.}{BESSON et al.}{2014}
+{BESSON, F.~M.; MOURA, P.; KON, F. Bringing test-driven development to web
+  service choreographies.
+\textbf{Journal of Systems and Software}, Elsevier, 2014.
+Accepted for publication.}
+
 \end{thebibliography}

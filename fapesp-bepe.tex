@@ -92,7 +92,7 @@ call=brackets,biblabel=show,biblabel=brackets,abnt-url-package=0]{sty/abntcite}
 
 \autor[Amario, Higor]{Higor Amario de Souza\\Advisor: Fabio Kon}
 
-\titulo{Research Internships Abroad Proposal:\\ Evaluating the practical use of fault localization techniques}
+\titulo{Research Visit to Georgia Tech:\\ Evaluating the practical use of fault localization techniques}
 
 
 \local{São Paulo}
@@ -117,37 +117,23 @@ call=brackets,biblabel=show,biblabel=brackets,abnt-url-package=0]{sty/abntcite}
 
 % Mandatory (4.1.9 Resumo na língua vernácula).
 \begin{abstract}
-
-Debugging is an inherent task in the software development process.
-Developers spend a significant amount of time searching for faults in program 
-code excerpts. In practice, the debugging activity continues to be carried out 
-manually. Developers inspect the code using symbolic debuggers or including 
-print statements in the code.
-Automating the fault localization process can collaborate to reduce the time spent 
-in the software development and to improve the software quality.
-In the recent years, several fault localization techniques have been proposed. 
-Most of the techniques generate a list with code excerpts more likely to 
-be faulty. Thus, developers can inspect such list to search for faults.
-However, practical evaluations with these techniques are needed to obtain a 
-better understanding about how the developers use them.
-Recent studies indicate that developers have an ``effort budget'' that they are willing 
-to spend using such techniques. If the fault is not found inspecting an certain amount 
-of code (the budget), they often use another personal strategy to inspect the code. 
-Moreover, the lists suggested by fault localization techniques are not followed in the 
-same presented sequence.
-The evaluation of the fault localization effort by developers when using fault 
-localization techniques is an important question to understand their practical usefulness 
-and how to improve them to be used in practice.
+Debugging is a time-consuming activity. Fault localization techniques have been 
+proposed in order to reduce development costs. Most of the techniques generate a 
+list of code excerpts more likely to be faulty. Thus, developers can inspect such 
+list to search for faults.
+However, experiments with developers using such techniques are needed to obtain a 
+better understanding about their practical use.
 The goal of this proposal is to investigate how developers use fault localization 
 techniques and what is the localization effort that they usually are willing to spend 
 searching for bugs using these techniques. We also intend to identify factors that 
 influence the automate fault localization, such as the test suite quality of programs 
 and multiple faults.
-The research internship will be carried out at the Georgia Institute of Technology under 
+The research visit will be carried out at the Georgia Institute of Technology under 
 the supervision of the Professor Alessandro Orso.
-% Our aim is to collaborate with fault localization in order to allow its practical use in 
-% industrial settings.
-
+During the visit, we will develop a fault localization technique to provide contextual 
+information. Two experiments will be carried out: an experiment to evaluate the performance 
+of the technique with programs and another experiment with developers to understand how the 
+technique is used in practice.
 \end{abstract}
 
 % Mandatory (4.1.15 Sumário).
@@ -189,7 +175,7 @@ used in fault localization \cite{jones2002}. Other heuristics used in fault loca
 
 The fault localization techniques present as their outcome a list of program entities ordered by suspiciousness values. By using 
 only the suspiciousness scores to order the program entities may lead to a list composed by unrelated elements. Developers that 
-participated of the study of Parnin and Orso (2011) \cite{parnin2011}, from the \textit{Georgia  Institute of Technology}, indicated that the 
+participated of the study of Parnin and Orso (2011) \cite{parnin2011}, from the \textit{Georgia  Institute of Technology} (Georgia Tech), indicated that the 
 relationship between program elements may enhance the adoption of automated fault localization techniques for practical use.
 Thus, the use of information about the context of the program can be evaluated with respect to its usefulness to the fault 
 localization.
@@ -241,7 +227,7 @@ in which each test case executes small excerpts of the program such as only one 
 each test case executes a large excerpts of the program the results are less precise. Thus, the evaluation of the test suite quality can be an important 
 factor to indicate whether a fault localization technique can be used. 
 
-This research internships abroad proposal aims to carry out experiments with developers during the visit period. The student Higor Amario de Souza will 
+This research visit proposal aims to carry out experiments with developers during the visit period. The student Higor Amario de Souza will 
 be supervised by the Professor Alessandro Orso, from the Georgia Institute of Technology. Professor Orso has a large experience in fault localization 
 area. He also carried out important studies about how developers use fault localization techniques \cite{parnin2011} and the use of contextual information 
 for fault localization \cite{hsu2008}. We intend to investigate some of the issues presented in this section, such as the effort budget spent by 
@@ -249,7 +235,7 @@ developers, the use of contextual information, multiple faults, and test suite q
 fault localization techniques.
 
 The remainder of this proposal is organized as follows. In the Section~\ref{goals} the goals of this proposal are detailed.
-The Section~\ref{workplan} shows the work plan and the proposed schedule. The methodology and the result analysis are shown in the 
+The Section~\ref{workplan} shows the work plan and the proposed schedule. The methodology and the analysis of the results are shown in the 
 Section~\ref{methodology}
 
 \
@@ -292,16 +278,16 @@ as well as the fault types and the relationship between the faults presented in 
 \label{workplan}
 
 During the visit we intend to understand how to use more contextual information to improve fault localization. In this sense, we intend to propose new ways to provide 
-these information to the fault localization process. The technique will be designed and developed to be used in a user study. We also intend to conduct a controlled 
-experiment with the technique. 
+these information to the fault localization process. The technique will be designed and developed to be used in a user study. We intend to conduct a controlled 
+experiment to evaluate the performance of the technique using some programs. 
 
-We also intend to conduct a controlled experiment with developer subjects. This experiment can help us to understand what is the fault localization effort that developers 
+We also intend to conduct a controlled experiment with developers. This experiment can help us to understand what is the fault localization effort that developers 
 are willing to spend in practice. Moreover, we can investigate the use of these additional context information by developers. The study will be designed and carried out 
 during the visit. 
 
 We intend to submit the results to the main conferences and journals of the Software Engineering area, such as \textit{IEEE Transactions on Software Engineering}, 
 \textit{International Conference on Software Engineering} and \textit{International Conference on Automated Software Engineering}. The Table~\ref{tab-activities} shows 
-the list of the planned activities to be carried out during the visit. The Table~\ref{tab-timeline} presents the schedule for the activities. The period of the internship 
+the list of the planned activities to be carried out during the visit. The Table~\ref{tab-timeline} presents the schedule for the activities. The period of the visit 
 is between February, 2015 and January, 2016.
 
 \begin{table}[h]
@@ -314,11 +300,11 @@ is between February, 2015 and January, 2016.
 \hline 2 & Development of the technique to provide new contextual information\\
 \hline 3 & Selection of benchmarks for use in the experiment\\
 \hline 4 & Experiments with programs\\
-\hline 5 & Experimental design protocol\\
+\hline 5 & Experimental design\\
 \hline 6 & Selection of benchmarks for use in the experiment\\
-\hline 7 & Experiment with developers subjects\\
-\hline 8 & Result analysis\\
-\hline 9 & Writing of the results\\
+\hline 7 & Experiment with developers\\
+\hline 8 & Analysis of the results\\
+\hline 9 & Writing of a joint paper\\
 \hline
 \end{tabular}
 \end{table}
@@ -341,7 +327,7 @@ is between February, 2015 and January, 2016.
 \hline 6 &  &  &  & $\bullet$ &  &  \\
 \hline 7 &  &  &  &  & $\bullet$ &  \\
 \hline 8 &  &  &  &  &  & $\bullet$ \\
-\hline 9 &  &  &  &  &  & $\bullet$ \\
+\hline 9 &  &  &  &  & $\bullet$ & $\bullet$ \\
 \hline
 \end{tabular}
 \end{table}
@@ -361,18 +347,19 @@ experiment.
 There are some time limitations to conduct experiments with developers. The experiments should not be time-consuming 
 to avoid that the participants may lose interest \cite{wainer2006}. We intend to use few benchmarks, each of them with 
 one or two faults. The test suite quality will be considered during the selection of the benchmarks. For the participants, 
-the experience in development and debugging will be considered as an important factor in the result analysis.
+the experience in development and debugging will be considered as an important factor in the analysis of the results.
 
 In the experimental design, we intend to use two groups of participants. An experimental group that will use the new proposed 
 technique. A control group that will use only the traditional resources of Eclipse for debugging, such as breakpoints and 
 test results. We will measure the fault localization effort taking into account the number of faults and the test suite quality. 
-A questionnaire will be applied for the experimental group to gather their opinions about the technique.
+A questionnaire will be applied for the experimental group to gather their opinions about the technique. The methodology will be 
+similar to a previous experiment carried out by Besson et al. (2014) \cite{besson2014} of our research group.
 
 We also intend to carry out a controlled experiment using benchmarks. In this experiment we intend to use more benchmarks and 
 more faults than in the user study. We will measure the fault localization effectiveness. The results will be compared with 
 other fault localization techniques. The test suite quality and the presence of multiple faults will be analyzed.
 
-We intend to identify new benchmarks to for the experiments. We intend to select benchmarks from open source repositories. 
+We intend to identify new benchmarks for the experiments. We intend to select benchmarks from open source repositories. 
 We will search for existent faults in the programs. Alternatively, we can include new faults if necessary.
 The test quality of such benchmarks will be evaluated. The presence of multiple faults and the interference between such 
 faults will also be verified. The benchmarks will be available for the scientific community of the area.
@@ -381,7 +368,7 @@ The methodology will be discussed in more details together with the Professor Or
 should happen.
 
 
-\subsection{Result analysis}
+\subsection{Analysis of the results}
 \label{analysis}
 
 The results will be analyzed using suitable hypothesis tests, according to the data distribution and the data type.
@@ -393,11 +380,11 @@ For the cases in which a developer abandon the fault localization technique, we 
 is more frequent. Thus, we can evaluate the effort budget to estimate the amount of code that developers are willing to spend using a 
 fault localization technique.
 
-The expected results during the research internship are listed as follows: (1) evaluating how developers use the proposed fault localization technique; 
+The expected results during the research visit are listed as follows: (1) evaluating how developers use the proposed fault localization technique; 
 (2) measuring the effort budget of developer using fault localization techniques; (3) evaluating the fault localization effort of the proposed 
 technique; (4) evaluating the impact of the test suite quality and the presence of multiple faults in fault localization.
 
-Another important expected result of this research internship is the improvement of the research skills of the applicant, through the contact and 
+Another important expected result of this research visit is the improvement of the research skills of the applicant, through the contact and 
 the experience of the Professor Orso and his research group at Georgia Tech. We also intend to collaborate with his research group to fit his current 
 research interests.
 
