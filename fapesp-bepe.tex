@@ -207,28 +207,28 @@ A graph mining algorithm is then applied to obtain a list of the most suspicious
 Souza e Chaim (2013) \cite{souza2013} proposed a technique that provides contextual information about the code, relating 
 basic blocks according with the methods that contain theses blocks. A developer can inspect the most suspicious methods and then search for the most 
 suspicious blocks that belongs to that method. 
-Thus, an user study exploring different techniques and programs could help us to evaluate strategies to improve fault localization.
+Thus, a user study exploring different techniques and programs could help us to evaluate strategies to improve fault localization.
 
 Another opened issue in the fault localization area is the occurrence of multiple faults. In practice, it is not possible to know the number of 
 faults that exist in a program and how these faults impacts the test results. Jones et al. (2007) \cite{jones2007} proposed a fault technique to 
 be used in programs with multiple faults. This technique performs the clustering of failed test cases using a similarity measure according with 
 their coverage. Test cases that belongs to the same cluster (called as fault focusing clusters) are considered as related to the same fault. 
 
-Debroy and Wong (2009) \cite{debroy2009}, from the University of Texas, studied the interference between two faults in the same version of a program 
+Debroy and Wong (2009) \cite{debroy2009} studied the interference between two faults in the same version of a program 
 and how this interference impacts the test results. They shown 
 that a fault can inhibit the failure behavior of the other fault (called as destructive interference). The interaction between the faults can also 
 result in more failed test cases (called as constructive interference).  Finally, the faults can not change the test case results. DiGiuseppe and 
-Jones (2011) \cite{digiuseppe2011}, from the University of California, Irvine, also studied the interference between faults in the program behavior. They 
+Jones (2011) \cite{digiuseppe2011} also studied the interference between faults in the program behavior. They 
 indicated four interference types: fault synergy, fault obscuring, failure/success independence and multiple types. These studies shown that the 
 interference between faults must be considered to carry out experiments in programs with multiple faults. 
 
-During the master's degree \cite{souza2012b} we observed that test suite quality influences the fault localization results. If a program has test cases 
+During the master's degree program \cite{souza2012b} we observed that test suite quality influences the fault localization results. If a program has test cases 
 in which each test case executes small excerpts of the program such as only one method, the fault localization results are more precise. Conversely, if 
 each test case executes a large excerpts of the program the results are less precise. Thus, the evaluation of the test suite quality can be an important 
 factor to indicate whether a fault localization technique can be used. 
 
 This research visit proposal aims to carry out experiments with developers during the visit period. The student Higor Amario de Souza will 
-be supervised by the Professor Alessandro Orso, from the Georgia Institute of Technology. Professor Orso has a large experience in fault localization 
+be supervised by Professor Alessandro Orso, from the Georgia Institute of Technology. Professor Orso has a large experience in fault localization 
 area. He also carried out important studies about how developers use fault localization techniques \cite{parnin2011} and the use of contextual information 
 for fault localization \cite{hsu2008}. We intend to investigate some of the issues presented in this section, such as the effort budget spent by 
 developers, the use of contextual information, multiple faults, and test suite quality to understand how these factors can influence developers using 
