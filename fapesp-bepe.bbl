@@ -78,11 +78,10 @@
   2002.  (ICSE '02), p. 467--477.}
 
 \bibitem{souza2012b}
-\abntrefinfo{Souza}{SOUZA}{2012}
-{SOUZA, H.~A. de.
-\textbf{Program Debugging based on Integration Coverage}.
-Disserta\c{c}\~ao (Mestrado) --- School of Arts, Sciences, and Humanities,
-  University of S\~ao Paulo, 2012. In Portuguese.}
+\abntrefinfo{Souza}{SOUZA}{}
+{SOUZA, H.~A. de. \textbf{Program Debugging based on Integration Coverage}.
+(Master Thesis) - School of Arts, Sciences, and Humanities, University of S\~ao
+  Paulo, 2012. In Portuguese.}
 
 \bibitem{souza2013}
 \abntrefinfo{Souza \& Chaim}{SOUZA; CHAIM}{2013}
@@ -124,8 +123,7 @@ Disserta\c{c}\~ao (Mestrado) --- School of Arts, Sciences, and Humanities,
 {DEBROY, V.; WONG, W.~E. Insights on fault interference for programs with
   multiple bugs. In:  \textbf{Proceedings of the 20th IEEE International
   Conference on Software Reliability Engineering}. Piscataway, NJ, USA: IEEE
-  Press, 2009.  (ISSRE '09), p. 165--174. Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/dl\-.acm\-.org\-/citation\-.cfm?id=1802408\-.1802433$>$}{http://dl.acm.org/citation.cfm?id=1802408.1802433}.}
+  Press, 2009.  (ISSRE '09), p. 165--174.}
 
 \bibitem{digiuseppe2011}
 \abntrefinfo{DiGiuseppe \& Jones}{DIGIUSEPPE; JONES}{2011}
