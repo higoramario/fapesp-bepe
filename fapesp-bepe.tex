@@ -124,7 +124,7 @@ list to search for faults.
 However, experiments with developers using such techniques are needed to obtain a 
 better understanding about their practical use.
 The goal of this proposal is to investigate how developers use fault localization 
-techniques and what is the localization effort that they usually are willing to spend 
+techniques and what is the localization effort that they are usually willing to spend 
 searching for bugs using these techniques. We also intend to identify factors that 
 influence the automate fault localization, such as the test suite quality of programs 
 and multiple faults.
@@ -146,12 +146,12 @@ technique is used in practice.
 
 Testing and debugging account for up to 75\% of the total cost of software development \cite{hailpern2002,tassey2002}.
 The existence of faults is inherent in software development for several reasons such as misunderstanding about 
-functionalities, typing errors, wrong variable assignments, or absence of code. It is not possible ensuring that any 
+functionalities, typing errors, wrong variable assignments, or absence of code. It is not possible to ensure that any 
 program is fault-free \cite{jones2007}. However, techniques that help developers to identify and fix faults can reduce 
 software development costs and improve the software quality.
 
 Debugging is composed of two main activities: \textit{fault localization} and \textit{fixing the fault} \cite{Myers2004}. 
-The debugging task begins with the presence of failures occurred in the program execution. Test cases are created to 
+The debugging task begins with the presence of failures that occurred in the program execution. Test cases are created to 
 simulate user scenarios. A failure is identified when a test output differs from its expected behavior. Thus, developers 
 use the test information to search for faults in the code.
 
@@ -169,73 +169,73 @@ excerpts are based on unit coverage (e.g., statements, predicates, basic blocks)
 coverage (e.g., method calls, classes) \cite{mariani2011,souza2012b,souza2013}.
 
 Fault localization techniques based on code coverage use ranking heuristics to calculate the suspiciousness of program entities.
-The rationale is that the more a program element is executed during the failed test cases, the more suspected  it is. Conversely, 
-the more frequent is a program element in passed test cases, the less suspected it is. Tarantula is one of the first heuristics 
+The rationale is that the more a program element is executed during the failed test cases, the more suspected it is. Conversely, 
+the more frequent a program element in passed test cases is, the less suspected it is. Tarantula is one of the first heuristics 
 used in fault localization \cite{jones2002}. Other heuristics used in fault localization are Ochiai and Jaccard \cite{abreu2007}.
 
-The fault localization techniques present as their outcome a list of program entities ordered by suspiciousness values. By using 
-only the suspiciousness scores to order the program entities may lead to a list composed by unrelated elements. Developers that 
-participated of the study of Parnin and Orso (2011) \cite{parnin2011}, from the \textit{Georgia  Institute of Technology} (Georgia Tech), indicated that the 
+The fault localization techniques present as their outcome a list of program entities ordered by suspiciousness values. Using 
+only the suspiciousness scores to order the program entities may lead to a list composed by unrelated elements. Developers that have
+participated of the study of Parnin and Orso (2011) \cite{parnin2011}, from the \textit{Georgia  Institute of Technology} (Georgia Tech), have indicated that the 
 relationship between program elements may enhance the adoption of automated fault localization techniques for practical use.
 Thus, the use of information about the context of the program can be evaluated with respect to its usefulness to the fault 
 localization.
 
 Another related issue about fault localization techniques are the metrics used to evaluate them. The most common metric is the 
-percentage of code inspected until reach the fault, i.e. the fault localization effort. In practice, even if a small percentage 
+percentage of code inspected until reaching the fault, i.e. the fault localization effort. In practice, even if a small percentage 
 of the code needs to be inspected, the absolute amount of code can be excessive depending on the size of the analyzed program. This fact 
-could leads the developer to abandon such technique. For instance, if a program has 50.000 lines of code and some technique 
+could lead the developer to abandon such technique. For instance, if a program has 50.000 lines of code and some technique 
 needs to inspect 1\% of the code to reach a fault, 500 lines will be inspected to find this fault. According to Parnin and Orso (2011)
 \cite{parnin2011} the techniques must focus on the absolute position instead of the relative position to be used in industrial settings.
-Thus, verifying how is the effort that developers are willing to spend using such techniques is important to evaluate the practical 
-usefulness of fault localization techniques.
-
+Thus, is important to evaluate the practical usefulness of fault localization techniques verifying what is the effort that developers 
+are willing to make using such techniques .
+	
 In this sense, user studies can help us to evaluate how these techniques are used by developers. Parnin and Orso (2011) \cite{parnin2011} 
-carried out a study with developers to verify how they use the technique Tarantula. This study indicates that developers tend to 
-use the technique if the fault could be found inspecting a few statements. When they did not find the fault among the first picks 
-they abandon the technique and search for the fault by themselves. Moreover, this study shows that the developers not necessarily 
-inspect the ranking list in the proposed order, using it to help their own knowledge about the code to search for faults. They also used
+have carried out a study with developers to verify how they use the Tarantula technique. This study indicates that developers tend to 
+use the technique if the fault can be found inspecting a few statements. When they did not find the fault among the first picks 
+they abandoned the technique and searched for the fault by themselves. Moreover, this study shows that the developers not necessarily 
+inspect the ranking list in the proposed order, using it to help their own knowledge about the code to search for faults. They have also used
 the historic of changes and the stack trace to inspect the code.
 The experiments of this study were carried out using two programs, each of them with a single fault. More experiments are needed to 
-a better understand about the developers' behavior when using fault localization techniques. 
+a better understanding of the developers' behavior when using fault localization techniques. 
 
 The use of more information about the context of the program can help the developers to understand the conditions in which a fault occurs. Some works 
-have been explored this issue. The technique presented by Hsu et al. (2008) \cite{hsu2008} analyzes parts of failed execution traces to 
+have explored this issue. The technique presented by Hsu et al. (2008) \cite{hsu2008} analyzes parts of failed execution traces to 
 indicate sequences of statements related to failures (called as bug signatures). Theses sequences can be examined to localize faults. 
-Cheng et al. (2009) \cite{cheng2009} proposed a model of subgraphs composed of nodes (method or blocks) and edges (method calls or 
+Cheng et al. (2009) \cite{cheng2009} have proposed a model of subgraphs composed of nodes (method or blocks) and edges (method calls or 
 method returns). These subgraphs are obtained from the difference between failed and passed control flow executions. 
 A graph mining algorithm is then applied to obtain a list of the most suspicious subgraphs. 
-Souza e Chaim (2013) \cite{souza2013} proposed a technique that provides contextual information about the code, relating 
-basic blocks according with the methods that contain theses blocks. A developer can inspect the most suspicious methods and then search for the most 
+Souza and Chaim (2013) \cite{souza2013} have proposed a technique that provides contextual information about the code, relating 
+basic blocks in accord with the methods that contain theses blocks. A developer can inspect the most suspicious methods and then search for the most 
 suspicious blocks that belongs to that method. 
-Thus, a user study exploring different techniques and programs could help us to evaluate strategies to improve fault localization.
+Thus, a user study exploring different techniques and programs could help us to evaluate strategies that can improve fault localization.
 
 Another opened issue in the fault localization area is the occurrence of multiple faults. In practice, it is not possible to know the number of 
-faults that exist in a program and how these faults impacts the test results. Jones et al. (2007) \cite{jones2007} proposed a fault technique to 
-be used in programs with multiple faults. This technique performs the clustering of failed test cases using a similarity measure according with 
-their coverage. Test cases that belongs to the same cluster (called as fault focusing clusters) are considered as related to the same fault. 
+faults that exist in a program and what kind of impact these faults have on test results. Jones et al. (2007) \cite{jones2007} have proposed a fault technique to 
+be used in programs with multiple faults. This technique performs the clustering of failed test cases using a similarity measure in accord with 
+their coverage. Test cases that belong to the same cluster (called as fault focusing clusters) are considered as related to the same fault. 
 
-Debroy and Wong (2009) \cite{debroy2009} studied the interference between two faults in the same version of a program 
-and how this interference impacts the test results. They shown 
+Debroy and Wong (2009) \cite{debroy2009} have studied the interference between two faults in the same version of a program 
+and how this interference has an impact on the test results. They have shown 
 that a fault can inhibit the failure behavior of the other fault (called as destructive interference). The interaction between the faults can also 
 result in more failed test cases (called as constructive interference).  Finally, the faults can not change the test case results. DiGiuseppe and 
-Jones (2011) \cite{digiuseppe2011} also studied the interference between faults in the program behavior. They 
-indicated four interference types: fault synergy, fault obscuring, failure/success independence and multiple types. These studies shown that the 
+Jones (2011) \cite{digiuseppe2011} have also studied the interference between faults in the behavior of programs. They have 
+indicated four types of interference: fault synergy, fault obscuring, failure/success independence and multiple types. These studies have shown that the 
 interference between faults must be considered to carry out experiments in programs with multiple faults. 
 
-During the master's degree program \cite{souza2012b} we observed that test suite quality influences the fault localization results. If a program has test cases 
-in which each test case executes small excerpts of the program such as only one method, the fault localization results are more precise. Conversely, if 
+During the master's degree program \cite{souza2012b} we have observed that test suite quality influences the fault localization results. If a program has test cases 
+in which each test case executes small excerpts of the program, such as only one method, the fault localization results are more precise. Conversely, if 
 each test case executes a large excerpts of the program the results are less precise. Thus, the evaluation of the test suite quality can be an important 
 factor to indicate whether a fault localization technique can be used. 
 
 This research visit proposal aims to carry out experiments with developers during the visit period. The student Higor Amario de Souza will 
 be supervised by Professor Alessandro Orso, from the Georgia Institute of Technology. Professor Orso has a large experience in fault localization 
-area. He also carried out important studies about how developers use fault localization techniques \cite{parnin2011} and the use of contextual information 
-for fault localization \cite{hsu2008}. We intend to investigate some of the issues presented in this section, such as the effort budget spent by 
+area. He has also carried out important studies about how developers use fault localization techniques \cite{parnin2011} and the use of contextual information 
+for fault localization \cite{hsu2008}. We intend to investigate some of the issues presented in this section, such as the effort budget made by 
 developers, the use of contextual information, multiple faults, and test suite quality to understand how these factors can influence developers using 
 fault localization techniques.
 
-The remainder of this proposal is organized as follows. In the Section~\ref{goals} the goals of this proposal are detailed.
-The Section~\ref{workplan} shows the work plan and the proposed schedule. The methodology and the analysis of the results are shown in the 
+The remainder of this proposal is organized as follows. In Section~\ref{goals} the goals of this proposal are detailed.
+Section~\ref{workplan} shows the work plan and the proposed schedule. The methodology and the analysis of the results are shown in 
 Section~\ref{methodology}
 
 \
@@ -247,29 +247,29 @@ We are interested in understanding how developers can use an automated debugging
 in industrial settings. To accomplish this, the following research questions must be addressed:
 
 \begin{enumerate}
- \item What is the fault localization effort that a developer is willing to spend using an automated debugging tool?
+ \item What is the fault localization effort that a developer is willing to make using an automated debugging tool?
  \item How can automated debugging tools provide more relevant information to the fault localization process?
- \item What are the factors that could impact the results provided by fault localization techniques?
+ \item What are the factors that could have an impact on the results provided by fault localization techniques?
  \item How to improve fault localization techniques to reduce false positives?
 \end{enumerate}
 
 We intend to conduct an experiment with developers to understand the fault localization effort. To perform this task we will use a debug visualization 
 tool with industrial/production level software. We are interested in understanding how developers use automated debugging tools in practice and what is the fault 
-localization effort that they are willing to spend when using these techniques. The idea is to carry out the experiment during the visit to the College of Computing 
+localization effort that they are willing to make when using these techniques. The idea is to carry out the experiment during the visit to the College of Computing 
 at the Georgia Institute of Technology.
 
 We have already studied the use of new context information to improve fault localization. We want to continue investigating how the use of integration coverage 
-information (classes and methods related to basic blocks) can contribute to improve fault localization. We also want to study another ways to provide contextual 
+information (classes and methods related to basic blocks) can contribute to improve fault localization. We also want to study other ways of providing contextual 
 information.
 
 To understand the factors that could affect the results of fault localization techniques, we intend to verify some questions. Programs developed in industrial context 
 may contain an unknown number of faults. Thus, it is necessary to carry out experiments with multiple faults. Moreover, it is necessary to identify new benchmarks 
 containing multiple faults since the existing benchmarks contain a single fault per version.
 
-The test suite quality can also influence the results of fault localization techniques. The more a test case is precise, the better is the fault localization result. 
+The test suite quality can also influence the results of fault localization techniques. The more a test case is precise, the better the fault localization result is. 
 Experiments using benchmarks with different test suite qualities may be an important factor to be analyzed.
 
-In the same way, the fault type should be considered by the fault localization techniques. As an example, a fault by an absence of code can be more difficult to find 
+In the same way, the fault type should be considered by fault localization techniques. As an example, a fault by an absence of code can be more difficult to find 
 compared to a fault in a conditional statement. We are currently identifying benchmarks to be used in the experiments. We will verify the test suite characteristics 
 as well as the fault types and the relationship between the faults presented in these benchmarks.						
 
@@ -277,17 +277,17 @@ as well as the fault types and the relationship between the faults presented in 
 \section{Work plan and schedule}
 \label{workplan}
 
-During the visit we intend to understand how to use more contextual information to improve fault localization. In this sense, we intend to propose new ways to provide 
+During the visit we intend to understand how to use more contextual information to improve fault localization. In this sense, we intend to propose new ways of providing 
 these information to the fault localization process. The technique will be designed and developed to be used in a user study. We intend to conduct a controlled 
 experiment to evaluate the performance of the technique using some programs. 
 
 We also intend to conduct a controlled experiment with developers. This experiment can help us to understand what is the fault localization effort that developers 
-are willing to spend in practice. Moreover, we can investigate the use of these additional context information by developers. The study will be designed and carried out 
+are willing to make in practice. Moreover, we can investigate the use of these additional context information by developers. The study will be designed and carried out 
 during the visit. 
 
-We intend to submit the results to the main conferences and journals of the Software Engineering area, such as \textit{IEEE Transactions on Software Engineering}, 
-\textit{International Conference on Software Engineering} and \textit{International Conference on Automated Software Engineering}. The Table~\ref{tab-activities} shows 
-the list of the planned activities to be carried out during the visit. The Table~\ref{tab-timeline} presents the schedule for the activities. The period of the visit 
+We intend to submit the results to the main conferences and journals of Software Engineering area, such as \textit{IEEE Transactions on Software Engineering}, 
+\textit{International Conference on Software Engineering} and \textit{International Conference on Automated Software Engineering}. Table~\ref{tab-activities} shows 
+the list of the planned activities to be carried out during the visit. Table~\ref{tab-timeline} presents the schedule for the activities. The period of the visit 
 is between February, 2015 and January, 2016.
 
 \begin{table}[h]
@@ -299,7 +299,7 @@ is between February, 2015 and January, 2016.
 \hline 1 & Evaluation of the use of contextual information in fault localization\\
 \hline 2 & Development of the technique to provide new contextual information\\
 \hline 3 & Selection of benchmarks for use in the experiment\\
-\hline 4 & Experiments with programs\\
+\hline 4 & Experiment with programs\\
 \hline 5 & Experimental design\\
 \hline 6 & Selection of benchmarks for use in the experiment\\
 \hline 7 & Experiment with developers\\
@@ -345,14 +345,14 @@ contextual information, multiple faults and test suite quality. We will need to 
 experiment.
 
 There are some time limitations to conduct experiments with developers. The experiments should not be time-consuming 
-to avoid that the participants may lose interest \cite{wainer2006}. We intend to use few benchmarks, each of them with 
-one or two faults. The test suite quality will be considered during the selection of the benchmarks. For the participants, 
+to avoid that the participants lose interest \cite{wainer2006}. We intend to use few benchmarks, each of them with 
+one or two faults. The test suite quality will be considered during the selection of benchmarks. For the participants, 
 the experience in development and debugging will be considered as an important factor in the analysis of the results.
 
-In the experimental design, we intend to use two groups of participants. An experimental group that will use the new proposed 
-technique. A control group that will use only the traditional resources of Eclipse for debugging, such as breakpoints and 
+In the experimental design, we intend to use two groups of participants: an experimental group that will use the new proposed 
+technique and a control group that will only use the traditional resources of Eclipse for debugging, such as breakpoints and 
 test results. We will measure the fault localization effort taking into account the number of faults and the test suite quality. 
-A questionnaire will be applied for the experimental group to gather their opinions about the technique. The methodology will be 
+A questionnaire will be applied to the experimental group to gather their opinions about the technique. The methodology will be 
 similar to a previous experiment carried out by Besson et al. (2014) \cite{besson2014} of our research group.
 
 We also intend to carry out a controlled experiment using benchmarks. In this experiment we intend to use more benchmarks and 
@@ -365,27 +365,27 @@ The test quality of such benchmarks will be evaluated. The presence of multiple 
 faults will also be verified. The benchmarks will be available for the scientific community of the area.
 
 The methodology will be discussed in more details together with the Professor Orso. Improvements and refinements 
-should happen.
+ought to happen.
 
 
 \subsection{Analysis of the results}
 \label{analysis}
 
-The results will be analyzed using suitable hypothesis tests, according to the data distribution and the data type.
+The results will be analyzed using suitable hypothesis tests, according to data distribution and data type.
 The main dependent variable will be the fault localization effort, measured by the absolute number of inspected code to 
 find a fault. The fault localization effort will be evaluated considering the test suite quality and the presence of multiple faults. 
 We also intend to verify if the development experience influences the fault localization effort.
 
-For the cases in which a developer abandon the fault localization technique, we intend to verify if there is limit in which this abandon 
+For the cases in which a developer abandons the fault localization technique, we intend to verify if there is a limit in which this abandonment
 is more frequent. Thus, we can evaluate the effort budget to estimate the amount of code that developers are willing to spend using a 
 fault localization technique.
 
 The expected results during the research visit are listed as follows: (1) evaluating how developers use the proposed fault localization technique; 
-(2) measuring the effort budget of developer using fault localization techniques; (3) evaluating the fault localization effort of the proposed 
+(2) measuring the effort budget of developers using fault localization techniques; (3) evaluating the fault localization effort of the proposed 
 technique; (4) evaluating the impact of the test suite quality and the presence of multiple faults in fault localization.
 
-Another important expected result of this research visit is the improvement of the research skills of the applicant, through the contact and 
-the experience of the Professor Orso and his research group at Georgia Tech. We also intend to collaborate with his research group to fit his current 
+Another important expected result of this research visit is the improvement of the research skills of the applicant, through the contact with and 
+the experience of Professor Orso and his research group at Georgia Tech. We also intend to collaborate with his research group to fit his current 
 research interests.
 
 
